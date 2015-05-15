@@ -1,0 +1,13 @@
+<template name="ShowTrajet">
+	<li>
+		<article class="trajet-box {{currentRouteName}}-page">
+			<p><strong>Transporteur :</strong> {{ username }}</p>
+		    <p><strong>Date de départ :</strong> {{ dateDepart }}</p>
+			<p><strong>Heure de départ :</strong> {{ heureDepart }} à {{ villeDepart }}</p>
+			<p><strong>Heure de arrivée :</strong> {{ heureArrivee }} à {{ villeArrivee }}</p>
+			<p><strong>Modèle du Véhicule :</strong> {{ voiture }}</p>
+			<p><strong>Tarif :</strong> {{ prix }}</p>
+			<p><strong>Nombres restantes de places :</strong> {{ places }}</p>
+		</article>
+	</li>
+</template>

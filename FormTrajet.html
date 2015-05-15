@@ -1,0 +1,30 @@
+<template name="FormTrajet">
+	
+	<h1>créer votre annonce</h1>
+
+	<form class="new-trajet">
+		<label>Date du départ</label>
+		<input type="date" name="dateDepart" required/>
+		<label>Heure départ</label>
+		<input type="time" name="heureDepart" required/>
+		<label>heure arrivée</label>
+		<input type="time" name="heureArrivee" required/>
+		<label>ville départ</label>
+		<input type="text" name="villeDepart" required/>
+		<label>ville arrivée</label>
+		<input type="text" name="villeArrivee" required/>
+		<label>Model de votre voiture</label>
+		<input type="text" name="voiture" required/>
+		<label>Tarif</label>
+		<input type="number" name="prix" min="0" max="500" required/>
+		<label>Nombe de place disponible</label>
+		<input type="number" name="places" min="1" max="8" required/>
+		<input type="submit" value="Ajouter mon trajet" />
+	</form>
+
+	<a href="{{pathFor 'ListTrajets'}}">voir les trajets</a>
+
+</template>
+
+<!--
+http://robertdickert.com/blog/2014/05/09/set-up-navigation-with-iron-router-and-bootstrap/ -->

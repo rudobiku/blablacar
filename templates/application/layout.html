@@ -1,0 +1,14 @@
+<template name="layout">
+	<div class="container">
+		<header class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="{{pathFor 'Accueil'}}"><img src="image/logo.png" alt="Accueil" /></a>
+				{{> loginButtons}}
+				{{ isLogged }}
+			</div>
+		</header>
+		<div id="main">
+			{{> yield}}
+		</div>
+	</div>
+</template>

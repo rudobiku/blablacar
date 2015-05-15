@@ -1,0 +1,19 @@
+<template name="TrajetPage">
+  <div class="trajet-page page">
+    {{> ShowTrajet}}
+  </div>
+
+  <br/><br/>
+  <a href="{{pathFor 'ListTrajets'}}">Retour à la liste des trajets</a>
+  <br/><br/>
+
+  {{#if isOwner}}
+  <input type="submit" value="Supprimer" class="delete" />
+  {{else}}
+    {{#if isZero}}
+      <span>voyage complet</span>
+    {{else}}
+      <input type="submit" value="Réserver" class="reservation" />
+    {{/if}}
+  {{/if}}
+</template>

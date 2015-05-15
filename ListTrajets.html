@@ -1,0 +1,8 @@
+<template name="ListTrajets">
+	<a href="{{pathFor 'FormTrajet'}}">créer une annonce</a>
+	<ul>
+	{{#each trajet}}
+		{{> TrajetItem}}
+	{{/each}}
+	</ul>
+</template>
